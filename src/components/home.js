@@ -86,7 +86,7 @@ function Home(props) {
         <div className={home.content}>
             {!loginVal?(
                 <div className={home.homePage}>
-                    Welcome to Thoughts!
+                    <h1>Welcome to Thoughts!</h1>
                 </div>
             ):(
                 <div className={home.cardPage}>
