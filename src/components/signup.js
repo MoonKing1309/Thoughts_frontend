@@ -58,7 +58,6 @@ function Signup(props) {
             await axios.post(`https://thoughts-backend-7qku.onrender.com/signup`,{userName,userPwd})
                 .then((res)=>{
                     if(res.status==201)
-                        navigate('/login')
                     {
                         axios.post(`https://thoughts-backend-7qku.onrender.com/login`,{userName,userPwd})
                         .then((res)=>{
