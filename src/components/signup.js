@@ -69,7 +69,7 @@ function Signup(props) {
                                     localStorage.setItem('loginVal', JSON.stringify(res.data.msg.id));
                                     localStorage.setItem('dateCreated',JSON.stringify(res.data.msg.dateCreated))
                                     navigate('/')
-                                    },500)
+                                    },1500)
                                 
                             }
                     })
