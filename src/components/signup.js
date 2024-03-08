@@ -59,23 +59,23 @@ function Signup(props) {
                 .then((res)=>{
                     if(res.status==201)
                         navigate('/login')
-                    // {
-                    //     axios.post(`https://thoughts-backend-7qku.onrender.com/login`,{userName,userPwd})
-                    //     .then((res)=>{
-                    //         if(res.status==201)
-                    //         {
-                    //             setTimeout(()=>{
-                    //                 setLoginVal(res.data.msg)
-                    //                 SetDateVal(res.data.msg.dateCreated)
-                    //                 localStorage.setItem('loginVal', JSON.stringify(res.data.msg.id));
-                    //                 localStorage.setItem('dateCreated',JSON.stringify(res.data.msg.dateCreated))
-                    //                 navigate('/')
-                    //                 },500)
+                    {
+                        axios.post(`https://thoughts-backend-7qku.onrender.com/login`,{userName,userPwd})
+                        .then((res)=>{
+                            if(res.status==201)
+                            {
+                                setTimeout(()=>{
+                                    setLoginVal(res.data.msg.id)
+                                    SetDateVal(res.data.msg.dateCreated)
+                                    localStorage.setItem('loginVal', JSON.stringify(res.data.msg.id));
+                                    localStorage.setItem('dateCreated',JSON.stringify(res.data.msg.dateCreated))
+                                    navigate('/')
+                                    },500)
                                 
-                    //         }
-                    // })
+                            }
+                    })
                         
-                    // }
+                    }
                 })
                 .catch((err)=>{
                     if(err.response.status==409)
