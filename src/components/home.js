@@ -4,12 +4,20 @@ import home from './home.module.css'
 import axios from 'axios';
 function Home(props) {
     const loginVal = props.loginState[0];
+    const setLoginVal = props.loginState[1];
     const [allPosts,setAllPosts] = useState()
     const [loading,setLoading] = useState(true)
     const [once,setOnce] = useState(true)
     const navigate = useNavigate()
 
     const fetchLastThreePosts =  ()=>{
+        if(!loginVal)
+        {
+            const templv = JSON.parse(localStorage.getItem('loginVal'));
+            if (templv) {
+            setLoginVal(templv);
+            }
+        }
          axios.get(`https://thoughts-backend-7qku.onrender.com/home/${loginVal}`)
                 .then((data)=>{
                     setAllPosts(data)
