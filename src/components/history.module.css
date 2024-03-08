@@ -1,0 +1,530 @@
+.content
+{
+    width: 100vw;
+    margin-top: 50px;
+    margin-bottom: 50px;
+
+    min-height: 80vh;
+}
+
+.cardPage
+{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap:20px;
+}
+
+.card
+{
+    margin: auto auto;
+    margin-top: 100px;
+    text-align: center;
+
+    width: 20vw;
+    max-height: 200px;
+
+    display: grid;
+    grid-template-rows: 1fr;
+    grid-template-columns: 1fr;
+    grid-template-areas: 
+    'cardTitle cardTitle'
+    'cardText cardText';
+
+    box-shadow: 0px 20px 100px;
+    border-radius: 20px;
+
+    cursor: pointer;
+}
+
+.cardTitle
+{
+    height: 30px;
+    /* background-color: red; */
+    grid-area: cardTitle;
+}
+.cardText
+{
+    height: 170px;
+    /* background-color: blue; */
+    grid-area: cardText;
+}
+
+
+#posttable table, #postTable, #postTable td
+{
+    margin: auto auto;
+    /* padding: 10px; */
+    border: 1px solid black;
+    border-collapse: collapse;
+
+}
+
+#postTable th
+{
+    background-color: plum;
+    position: sticky;
+    top:0px;
+}
+
+#postTable
+{
+    max-height: 70vh;
+    overflow-y: scroll;
+}
+
+#postTable td
+{
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+
+#postTable th
+{
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+
+#pTitle
+{
+    /* padding-left: 10vw;
+    padding-right: 10vw; */
+}
+#pText
+{
+    min-width: 50%;
+    /* width: 20%; */
+    /* padding-left: 15vw; */
+    /* padding-right: 15vw; */
+}
+#pDate
+{
+    /* width: 20%; */
+    /* padding-left: 3vw; */
+    /* padding-right: 3vw; */
+}
+#pSno
+{
+    /* width: 20%; */
+    /* padding-left: 3vw; */
+    /* padding-right: 3vw; */
+}
+
+#pAction
+{
+    /* width: 20%; */
+    /* padding-left: 3vw; */
+    /* padding-right: 3vw; */
+}
+
+     
+
+
+
+.yearCard
+{
+    margin: auto auto;
+    margin-top: 100px;
+    text-align: center;
+    
+
+    width: 20vw;
+    /* height: 300px; */
+
+    display: grid;
+    grid-template-rows: 1fr;
+    grid-template-columns: 1fr;
+    grid-template-areas: 
+    'yearCardTitle yearCardTitle'
+    'yearCardText yearCardText';
+
+    box-shadow: 0px 20px 100px;
+    border-radius: 10px;
+
+    cursor: pointer;
+
+    background-color: white;
+}
+
+.yearCardTitle
+{
+    height: 30px;
+    /* background-color: red; */
+    grid-area: yearCardTitle;
+    background-color: plum;
+
+    font-weight: 700;
+
+    border-bottom:  5px solid black;
+
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+.yearCardText
+{
+    /* height: 170px; */
+    /* background-color: blue; */
+    grid-area: yearCardText;
+    display: grid;
+    grid-template-rows: 1fr 2fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-areas:
+    'year0 year1 year2 year3 year4'
+    'yearSpl yearSpl yearSpl yearSpl yearSpl'
+    'year5 year6 year7 year8 year9';
+
+}
+
+@media only screen and (max-width:1000px)
+{
+        .yearCard
+        {
+            width: 30vw;
+            /* height: 300px; */
+        }
+}
+@media only screen and (max-width:720px)
+{
+        .yearCard
+        {
+            width: 42vw;
+            /* height: 400px; */
+        }
+}
+@media only screen and (max-width:520px)
+{
+        .yearCard
+        {
+            width: 70vw;
+            /* height: 400px; */
+        }
+}
+
+#year0
+{
+    grid-area: year0;
+}
+#year1
+{
+    grid-area: year1;
+}
+#year2
+{
+    grid-area: year2;
+}
+#year3
+{
+    grid-area: year3;
+}
+#year4
+{
+    grid-area: year4;
+}
+#year5
+{
+    grid-area: year5;
+}
+#year6
+{
+    grid-area: year6;
+}
+#year7
+{
+    grid-area: year7;
+}
+#year8
+{
+    grid-area: year8;
+}
+#year9
+{
+    grid-area: year9;
+}
+#yearSpl
+{
+    grid-area: yearSpl;
+}
+
+
+.monthCard
+{
+    margin: auto auto;
+    margin-top: 100px;
+    text-align: center;
+    
+
+    width: 20vw;
+    min-height: 200px;
+
+    display: grid;
+    grid-template-rows: 1fr;
+    grid-template-columns: 1fr;
+    grid-template-areas: 
+    'monthCardTitle monthCardTitle'
+    'monthCardText monthCardText';
+
+    box-shadow: 0px 20px 100px;
+    border-radius: 10px;
+
+    cursor: pointer;
+
+    background-color: white;
+}
+
+.monthCardTitle
+{
+    /* height: 30px; */
+    height: 30px;
+    /* background-color: red; */
+    grid-area: monthCardTitle;
+    background-color: plum;
+    font-weight: 700;
+    border-bottom:  5px solid black;
+
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+.monthCardText
+{
+    /* height: 170px; */
+    /* background-color: blue; */
+    grid-area: monthCardText;
+
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-areas:
+    'month0 month1 month2'
+    'month3 month4 month5'
+    'month6 month7 month8'
+    'month9 month10 month11';
+
+}
+
+@media only screen and (max-width:980px)
+{
+        .monthCard
+        {
+            width: 30vw;
+            /* height: 300px; */
+        }
+}
+@media only screen and (max-width:720px)
+{
+        .monthCard
+        {
+            width: 42vw;
+            /* height: 400px; */
+        }
+}
+@media only screen and (max-width:520px)
+{
+        .monthCard
+        {
+            width: 70vw;
+            /* height: 400px; */
+        }
+}
+
+#month0
+{
+    grid-area : month0;
+}
+#month1
+{
+    grid-area : month1;
+}
+#month2
+{
+    grid-area : month2;
+}
+#month3
+{
+    grid-area : month3;
+}
+#month4
+{
+    grid-area : month4;
+}
+#month5
+{
+    grid-area : month5;
+}
+#month6
+{
+    grid-area : month6;
+}
+#month7
+{
+    grid-area : month7;
+}
+#month8
+{
+    grid-area : month8;
+}
+#month9
+{
+    grid-area : month9;
+}
+#month10
+{
+    grid-area : month10;
+}
+#month11
+{
+    grid-area : month11;
+}
+
+
+.postCardPage
+{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap:20px;
+}
+
+.postCard
+{
+    margin: auto auto;
+    margin-top: 100px;
+    text-align: center;
+
+    width: 20vw;
+    height: 200px;
+
+    display: grid;
+    grid-template-rows: 0.1fr 1fr;
+    grid-template-columns: 0.7fr 0.3fr;
+    grid-template-areas: 
+    'postCardTitle postCardDateTime'
+    'postCardText postCardText';
+
+    box-shadow: 0px 20px 100px;
+    border-radius: 10px;
+
+    cursor: pointer;
+
+    background-color: plum;
+}
+
+.postCardTitle
+{
+    height: 100%;
+    /* background-color: red; */
+    grid-area: postCardTitle;
+    text-align: start;
+    width: 100%;
+    margin-top: 10px;
+    margin-left: 5px;
+    font-weight: 600;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    /* border-bottom: 2px solid black; */
+}
+.postCardDateTime
+{
+    height: 100%;
+    /* background-color: green; */
+    grid-area: postCardDateTime;
+    width: 80%;
+    text-align: end;
+    margin: 10px;
+
+    font-weight: 800;
+    color: whitesmoke;
+    /* font-size: x-large; */
+    /* border-left: 2px solid black; */
+}
+.postCardText
+{
+    border-top: 5px solid black;
+    height: 100%;
+    width: 100%;
+    /* padding: 5px; */
+    /* background-color: blue; */
+    grid-area: postCardText;
+    background-color: white;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    text-align: start;
+    /* padding-left: 5px; */
+}
+
+#edit
+{
+
+    /* background-color: #ffc400; */
+    /* padding: 10px; */
+    margin-left: 20px;
+    text-decoration: none;
+    color: white;
+    font-weight: 900;
+    /* border: 1px solid black;
+    border-radius: 5px; */
+    /* box-shadow: 0px 1px 5px #ffc400; */
+
+    cursor: pointer;
+    /* min-width: 70px; */
+    
+}
+#delete
+{
+    /* background-color: hsl(0, 100%, 50%); */
+    /* padding: 10px; */
+    margin-left: 20px;
+    text-decoration: none;
+    color: white;
+    font-weight: 900;
+    /* border: 1px solid black;
+    border-radius: 5px; */
+    /* box-shadow: 0px 1px 5px #ffc400; */
+
+    cursor: pointer;
+
+    /* min-width: 70px; */
+    
+}
+
+.backDiv{
+    margin-top: 100px;
+}
+
+.backButton
+{
+    display: block;
+    background-color: #ffffff;
+    padding: 10px;
+    /* width: 100px; */
+    /* position: relative; */
+    margin: auto auto;
+    text-decoration: none;
+    color: plum;
+    font-weight: 900;
+    border: 1px solid white;
+    border-radius: 15px;
+    /* box-shadow: 0px 1px 3px white; */
+    cursor: pointer;
+
+}
+
+#button
+{
+    background-color: white;
+    padding: 10px;
+    display: block;
+    text-decoration: none;
+    color: plum;
+    font-weight: 900;
+    border: 1px solid white;
+    border-radius: 15px;
+    /* box-shadow: 0px 1px 3px white; */
+    cursor: pointer;
+
+    margin: auto auto;
+
+    margin-top: 10px;
+
+
+}

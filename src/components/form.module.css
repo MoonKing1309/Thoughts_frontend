@@ -1,0 +1,133 @@
+.content
+{
+  text-align: center;
+  /* background-color: white; */
+  position: relative;
+  /* background-color: aliceblue; */
+  padding-top: 100px;
+  min-height: 100vh;
+  margin-bottom: 0px;
+  z-index: 2;
+}
+
+.formbox
+{
+    box-shadow: 1px 5px 20px black;
+    width: 500px;
+    margin: auto auto;
+    height: 600px;
+    margin-bottom: 20vh;
+    background-color: plum;
+    border-radius: 50px;
+    padding-top: 0px;
+    
+}
+
+@media only screen and (max-width:550px)  {
+    .formbox
+    {
+        width:90%;
+    }
+
+    .formbox input
+    {
+        width: 90%;
+    }
+    
+}
+@media only screen and (max-width:413px)  {
+  #eyes{
+    margin-right: -1px !important;
+    margin-bottom: 0px !important;
+  
+  }
+    
+}
+@media only screen and (max-width:400px)  {
+  #eyes{
+    margin-right: -3px !important;
+    margin-bottom: -3px !important;
+  
+  }
+    
+}
+
+.formbox>h1
+{
+    padding-top: 50px;
+}
+.formbox > form
+{
+    margin-top: 50px;
+}
+
+.formbox input
+{
+    outline: none;
+    border: 2px solid white;
+    height: 20px;
+    border-radius: 30px;
+    padding-left: 20px;
+}
+
+.formbox td, .formbox tr
+{
+    padding: 20px 20px 20px 20px;
+    text-align: center;
+}
+
+#tableForm
+{
+    margin:auto auto;
+
+}
+
+
+.circleLoader {
+  margin-top: 8px;
+  margin-left: 10px;
+  border: 3px solid rgba(0, 0, 0, 0.2);
+  border-left-color: white;
+  animation: loaderSpin 1.2s infinite linear;
+  position: absolute;
+  display: none;
+  vertical-align: top;
+  border-radius: 50%;
+  width: 20px;
+  height: 20px;
+}
+
+@keyframes loaderSpin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+
+#eyes{
+  display: inline-block;
+  margin-left: -25px;
+  margin-bottom: -3px;
+
+}
+
+#tableForm button
+{
+    background-color: white;
+    padding: 10px;
+    margin-right: 10px;
+    text-decoration: none;
+    color: plum;
+    font-weight: 900;
+    border: 1px solid white;
+    border-radius: 15px;
+    /* box-shadow: 0px 1px 3px white; */
+    cursor: pointer;
+
+
+}
+
+
