@@ -66,9 +66,9 @@ function Signup(props) {
                                 setTimeout(()=>{
                                     setLoginVal(res.data.msg)
                                     SetDateVal(res.data.msg.dateCreated)
-                                    localStorage.setItem('loginVal', JSON.stringify(res.data.msg.id));
+                                    // localStorage.setItem('loginVal', JSON.stringify(res.data.msg.id));
                                     localStorage.setItem('dateCreated',JSON.stringify(res.data.msg.dateCreated))
-                                    navigate('/')
+                                    navigate('/login')
                                     },500)
                                 
                             }
