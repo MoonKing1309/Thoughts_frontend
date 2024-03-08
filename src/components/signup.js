@@ -58,21 +58,22 @@ function Signup(props) {
             await axios.post(`https://thoughts-backend-7qku.onrender.com/signup`,{userName,userPwd})
                 .then((res)=>{
                     if(res.status==201)
-                    {
-                        axios.post(`https://thoughts-backend-7qku.onrender.com/login`,{userName,userPwd})
-                        .then((res)=>{
-                            if(res.status==201)
-                            {
-                                setTimeout(()=>{
-                                    setLoginVal(res.data.msg)
-                                    SetDateVal(res.data.msg.dateCreated)
-                                    // localStorage.setItem('loginVal', JSON.stringify(res.data.msg.id));
-                                    localStorage.setItem('dateCreated',JSON.stringify(res.data.msg.dateCreated))
-                                    navigate('/login')
-                                    },500)
+                        navigate('/login')
+                    // {
+                    //     axios.post(`https://thoughts-backend-7qku.onrender.com/login`,{userName,userPwd})
+                    //     .then((res)=>{
+                    //         if(res.status==201)
+                    //         {
+                    //             setTimeout(()=>{
+                    //                 setLoginVal(res.data.msg)
+                    //                 SetDateVal(res.data.msg.dateCreated)
+                    //                 localStorage.setItem('loginVal', JSON.stringify(res.data.msg.id));
+                    //                 localStorage.setItem('dateCreated',JSON.stringify(res.data.msg.dateCreated))
+                    //                 navigate('/')
+                    //                 },500)
                                 
-                            }
-                    })
+                    //         }
+                    // })
                         
                     }
                 })
